@@ -1,0 +1,43 @@
+.colorpicker-palette {
+    border-spacing:0;
+    border-collapse:collapse;
+    position:absolute;
+	z-index:1;
+	margin:5px 0 0 2px;
+}
+
+.colorpicker {
+    display:inline-block;
+	-moz-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+}
+
+.colorpicker::selection {
+	background:transparent;
+}
+
+.colorpicker,
+.colorpicker-palette td {
+    width:16px;
+    height:16px;
+    border:1px solid #000;
+    cursor:pointer;
+    line-height:16px;
+    font-size:16px;
+    color:#fff;
+    text-align:center;
+    text-shadow:
+        -1px   0    0px #333,
+         0     1px  0px #333,
+         1px   0    0px #333,
+         0    -1px  0px #333;
+}
+
+.colorpicker-spacer {
+    height:5px;
+}
+
+.colorpicker-checked {}
